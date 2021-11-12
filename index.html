@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        div{
+            text-align: center;
+            margin: 200px 0px 0px 360px;
+            
+            box-shadow: 0px 0px 10px black;
+            width:40%;
+            height:20vh;
+            background-color:peru;
+            color:white;
+        
+        }
+
+    </style>
+    <script>    
+    function hideShowPass() {
+        
+        var passref=document.getElementById("pass");
+        if(passref.type=="password"){
+            passref.type=Text;
+        
+
+
+        }
+        else{
+            passref.type="password";
+           
+
+        }
+            
+        var btn=document.getElementById("btn");
+        
+        if(btn.innerText=="show password"){
+            btn.innerText="hide password";
+        }else{
+            btn.innerText="show password"
+        }
+        
+        
+
+        
+          
+
+    }
+    </script>
+
+</head>
+<body><div>
+    <h2> show/hide password</h2>
+    <label> Enter Password</label>
+    <input type="password" id="pass"/>
+    <button id="btn" onclick="hideShowPass()"> show password</button>
+</div>
+    
+</body>
+</html>
